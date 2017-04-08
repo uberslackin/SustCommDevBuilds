@@ -3,7 +3,7 @@ web:
     links:
      - mysql
     environment:
-     - WORDPRESS_DB_PASSWORD=ururE3#2EtY5%y:hT%d@a
+     - WORDPRESS_DB_PASSWORD=<password_>
     working_dir: /var/www/html
     volumes:
      - /root/wordpress/wpcontent/:/var/www/html/wp-content
@@ -13,5 +13,5 @@ web:
 mysql:
     image: mariadb
     environment:
-     - MYSQL_ROOT_PASSWORD=ururE3#2EtY5%y:hT%d@a
+     - MYSQL_ROOT_PASSWORD=<password_>
      - MYSQL_DATABASE=wordpress
