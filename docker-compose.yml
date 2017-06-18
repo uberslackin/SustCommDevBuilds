@@ -6,8 +6,8 @@ web:
      - WORDPRESS_DB_PASSWORD=<password_>
     working_dir: /var/www/html
     volumes:
-     - /root/wordpress/wpcontent/:/var/www/html/wp-content
-     - /root/wordpress/init.sql:/docker-entrypoint-initdb.d/init.sql
+     - /ubuntu/wordpress/wpcontent/:/var/www/html/wp-content
+     - /ubuntu/wordpress/scdhub_db1.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
      - "80:80"
 mysql:
